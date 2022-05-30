@@ -1,0 +1,83 @@
+#welcomes user
+print("Welcome to the superhero trivia")
+Ready = input("ARE YOU READY TO PLAY (yes/no):")
+score = 0
+total_questions = 10
+
+#first question:
+if Ready.lower() == 'yes':
+    Ready = input("1.Who in endgame died at the end?\n")
+    if Ready.lower() == "ironman":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("2.What is batman's favorite food?\n")
+    if Ready.lower() == "mulligatawny soup":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("3.What name is Captain Marvel also sometimes known by now in DC?\n")
+    if Ready.lower() == "shazam":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("4.What type of doctor is Doctor Strange?\n")
+    if Ready.lower() == "neurosurgeon":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("5.Who is the superhero that is also known as the “Man of Steel?”\n")
+    if Ready.lower() == "superman":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("6.Black Panther is set in which fictional country?\n")
+    if Ready.lower() == "wakanda":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("7.What does, (Ra's Al Ghul) translate to?\n")
+    if Ready.lower() == "the demon's head":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("8.What is Superman's dog called?\n")
+    if Ready.lower() == "krypto":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("9.In the Spider-man movie, Uncle Ben said something to Peter. Fill in the blanks: “With great power, comes great __”\n")
+    if Ready.lower() == "responsibility":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#next question:
+    Ready = input("10.Who killed Thomas and Martha Wayne? \n")
+    if Ready.lower() == "joe chill" or Ready.lower() == "robber":
+        score += 1
+        print("correct")
+    else:
+        print("inncorrect")
+#END OF QUIZ
+
+    print("END OF QUIZ!!!, Thanks for playing you got:",score,"question correct")
+    total = (score/total_questions)*100
+    print("mark:",total,"% ")
+print("goodbye")
